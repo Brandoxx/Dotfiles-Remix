@@ -8,10 +8,12 @@ local M = {
 
 	    configs.setup({
 		    ensure_installed = {"c", "javascript", "rust"},
+		    auto_install = true,
 		    highlight = {enable = true},
 		    indent = {enable = true},
 	    })
-    end
+    end,
+    lazy = false
 }
 
 return { M }
